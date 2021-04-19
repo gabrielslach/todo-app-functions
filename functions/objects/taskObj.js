@@ -1,5 +1,5 @@
 const taskConstructor = (id, title, description, categoriesStr, status, taskgroup) => {
-    const categories = categoriesStr.split(',');
+    const categories = categoriesStr.split(',').map(item=>item.trim());
     return ({
         id,
         title,
